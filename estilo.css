@@ -1,0 +1,25 @@
+*{ padding: 0px; margin: 0px; text-decoration: none; }
+body{ background-color: #CCC; }
+input, textarea{ padding: 4px; margin: 2px; border-radius: 2px; border: none; box-shadow: 0px 0px 0px 1px rgb(0,0,0,.1); }
+textarea{ min-width: 250px; min-height: 50px; }
+hr{ margin: 4px 0px; }
+
+table{ width: 720px; margin-bottom: 4px; border-radius: 4px; background: #fff; box-shadow: 0px 0px 0px 1px rgb(0,0,0,.1); }
+.res{ width: 700px; }
+
+.opciones{ display: flex; flex-wrap: wrap; }
+
+td{ padding: 4px; margin: 4px; }
+tr .der{ text-align: right; }
+tr .usuario{ font-weight: bold; }
+tr .fecha, .t12{ font-size: 12px; }
+
+@media screen and (max-width: 337px) and (min-width: 0px) {
+	input[type=text],
+	input[type=url],
+	input[type=password],
+	input[type=email],
+	textarea
+		{ width: 95%; }
+	}
+	@media screen and (max-width: 743px) and (min-width: 0px) { table{ width: 95%; } .res{ width: 90%; } }
